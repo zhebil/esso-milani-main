@@ -1,0 +1,135 @@
+.header {
+    padding-top: 30px;
+    padding-bottom: 46px;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        margin-left: -14px;
+        img {
+            width: 320px;
+            height: 58px;
+        }
+    }
+    &__menu {}
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__sound {
+        background: none;
+        width: 30px;
+        height: 30px;
+    }
+    &__money-wrapper {
+        width: 330px;
+        justify-content: space-between;
+    }
+    &__money {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        dl {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__money-icon {
+        margin-right: 10px;
+    }
+    &__money-text {
+        display: inline;
+        font-size: 16px;
+        line-height: normal;
+        margin-right: 5px;
+    }
+    &__money-count {
+        font-size: 16px;
+        line-height: normal;
+        display: inline;
+    }
+    &__button {}
+    &__lang {
+        max-width: 80px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__lang-btn {
+        border-radius: 50%;
+        background: transparent;
+        &--active {
+            filter: drop-shadow(0px 2px 14px rgba(230, 156, 92, 0.5));
+        }
+    }
+    &__login {
+        margin-right: 20px;
+        transition: all 0.4s ease;
+        position: relative;
+        &:before {
+            content: "";
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            display: block;
+            position: absolute;
+            transition: all 0.2s ease;
+            pointer-events: none;
+            background: $color1;
+        }
+        &:hover,
+        &:focus {
+            color: $color1;
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.container {}
+
+.menu {
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item {
+        padding: 0 10px;
+    }
+    &__link {
+        transition: all 0.4s ease;
+        position: relative;
+        &:before {
+            content: "";
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            display: block;
+            position: absolute;
+            transition: all 0.2s ease;
+            pointer-events: none;
+            background: $color1;
+        }
+        &:hover,
+        &:focus {
+            color: $color1;
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+    &__burger-wrapper {
+        display: none;
+    }
+    &__burger {}
+    &__text {}
+}
