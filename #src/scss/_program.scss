@@ -1,0 +1,49 @@
+.program {
+    &__inner {
+        border-radius: 12px;
+        background: url(../img/program-bg.png) center/cover no-repeat;
+    }
+    &__slider {}
+    &__slide {
+        padding: 100px 0 60px;
+    }
+    &__slide-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        &--1 {
+            background: url(../img/program/money-1.svg) right no-repeat;
+        }
+        &--2 {
+            background: url(../img/program/money-2.svg) right no-repeat;
+        }
+        &--3 {
+            background: url(../img/program/money-3.png) right no-repeat;
+        }
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        font-size: 16px;
+        line-height: 16px;
+        color: $color1;
+        margin-bottom: 30px;
+    }
+    &__chart {}
+    &__figcaption {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 16px;
+        color: $color1;
+    }
+    &__button {
+        margin-bottom: 35px;
+    }
+    &__slider-nav {
+        .swiper-button-prev,
+        .swiper-button-next {
+            position: absolute;
+            margin: 0 70px;
+        }
+    }
+}

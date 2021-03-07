@@ -1,0 +1,17 @@
+.courses {
+    background-color: $block-bg;
+    padding: 50px;
+    &__inner {}
+    &__name {
+        color: $color1;
+    }
+    &__number {}
+    &__marquee {
+        width: 1720px;
+        justify-content: space-between;
+    }
+    &__item {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}

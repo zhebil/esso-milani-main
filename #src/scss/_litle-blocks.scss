@@ -48,6 +48,7 @@
     font-weight: 300;
     font-size: 48px;
     line-height: 48px;
+    margin-bottom: 50px;
     @media (max-width: 650px) {
         font-size: 36px;
         line-height: 48px;
@@ -61,7 +62,9 @@
         display: flex;
         align-content: center;
         justify-content: space-between;
-        margin-bottom: 16px;
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
     }
     &__dt {
         flex: 60% 0 1;
@@ -135,4 +138,56 @@
             background: linear-gradient(225.92deg, #CDB185 2.19%, #EBD3AE 101.5%);
         }
     }
+}
+
+.dl-end {
+    font-size: 16px;
+    line-height: 16px;
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 235px;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    &__dt {}
+    &__dd {
+        color: $color1;
+    }
+}
+
+.slider {
+    &__nav {
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: static;
+    margin: 0 15px;
+    &:after {
+        background: url(../img/icons/slider-arrow.svg) center no-repeat;
+        font-size: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.swiper-button-prev {}
+
+.swiper-button-next {
+    &::after {
+        transform: rotate(180deg);
+    }
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
 }

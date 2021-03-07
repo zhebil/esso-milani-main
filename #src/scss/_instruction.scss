@@ -1,0 +1,100 @@
+.instruction {
+    &__head {
+        margin-bottom: 50px;
+        justify-content: space-between;
+    }
+    &__title {
+        margin-bottom: 0;
+        flex: calc(25% - 20px) 0 1;
+        max-width: calc(25% - 20px);
+    }
+    &__head-info {
+        flex: calc(75% - 20px) 0 1;
+        max-width: calc(75% - 20px);
+        justify-content: space-between;
+    }
+    &__head-item {
+        flex: calc(33.333% - 20px) 0 1;
+        max-width: calc(33.333% - 20px);
+    }
+    &__head-img {
+        margin-right: 16px;
+    }
+    &__head-head-text {
+        dt {
+            font-weight: 300;
+            font-size: 32px;
+            line-height: normal;
+            color: #CEA055;
+        }
+        dd {
+            font-size: 16px;
+            line-height: normal;
+        }
+    }
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        list-style: none;
+        flex: calc(25% - 20px) 0 1;
+        max-width: calc(25% - 20px);
+        &:nth-child(3) {
+            .instruction__item-inner {
+                padding: 50px;
+            }
+        }
+    }
+    &__number {
+        font-weight: 100;
+        font-size: 120px;
+        line-height: 120px;
+        margin-bottom: 10px;
+        color: $color1;
+    }
+    &__name {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 20px;
+        color: $color1
+    }
+    &__item-body {
+        height: 260px;
+        margin-bottom: 60px;
+    }
+    &__img {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__button {}
+    &__icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item-inner {
+        height: 100%;
+        padding: 50px 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__icon {
+        flex: calc(25% - 10px);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__label {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+}

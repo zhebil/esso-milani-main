@@ -1,0 +1,92 @@
+.assets {
+    &__title {}
+    &__table-wrapper {
+        width: 100%;
+        overflow: auto;
+    }
+    &__table {
+        width: 1720px;
+    }
+    &__row {
+        display: flex;
+        border-bottom: 1px solid #363636;
+    }
+    &__dt {
+        width: 250px;
+        background: #2C2C2C;
+        padding: 50px;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: normal;
+        span {
+            display: block;
+            &:last-child {
+                font-size: 24px;
+            }
+        }
+    }
+    &__dd {
+        padding: 45px 50px;
+        display: flex;
+        align-items: center;
+        background-color: $block-bg;
+        width: calc(100% - 250px);
+        &--crypto {
+            img {
+                &:not(:last-child) {
+                    margin-right: 18px;
+                }
+            }
+        }
+        &--currencies {
+            img {
+                &:not(:last-child) {
+                    margin-right: 38px;
+                }
+            }
+        }
+        &--stock {
+            img {
+                &:not(:last-child) {
+                    margin-right: 16px;
+                }
+            }
+        }
+        &--material {
+            img {
+                &:not(:last-child) {
+                    margin-right: 27px;
+                }
+            }
+        }
+        &--metals {
+            img {
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+            }
+        }
+        &--investments {
+            padding: 35px 50px;
+        }
+        &--business {
+            padding: 35px 50px;
+            p {
+                font-weight: bold;
+                font-size: 42px;
+                line-height: 48px;
+            }
+            *:not(:first-child) {
+                margin: 0 15px;
+            }
+        }
+    }
+    &__btn {
+        height: 65px;
+        background: #DEDEDE;
+        margin-right: 30px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 16px;
+    }
+}

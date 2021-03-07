@@ -11,64 +11,302 @@
     @@include("_header.html")
     <!--  -->
     <main>
+        <h1 class="visually-hidden">Esso Milani</h1>
         <div class="container">
-            <section class="start-section">
-                <div class="swiper-container">
+            <section class="start-section section-margin">
+                <div class="swiper-container start-section__slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide start-section__slide">
                             <div class="start-section__chart"><img src="./img/charts/chart-1.png" width="1370" height="498" alt="chart"></div>
-                            <div class="start-section__aside start-section__aside--min page-block">
+                            <div class="start-section__aside aside start-section__aside--min page-block">
                                 <form class="page-block__inner">
-                                    <div class="options-aside__item">
-                                        <div class="options-aside__row row">
-                                            <h3 class="options-aside__label">Amount</h3>
-                                            <div class="options-aside__icon tooltip-js" title="hello, this is tooltip">
+                                    <div class="aside__item">
+                                        <div class="aside__row row">
+                                            <h3 class="aside__label">Amount</h3>
+                                            <div class="aside__icon tooltip-js" title="hello, this is tooltip">
                                                 <img src="./img/icons/question.svg" width="20" height="20" alt="question icon">
                                             </div>
                                         </div>
                                         <label class="input input--icon">
-                                                <span class="input__icon"><img src="./img/icons/usd-white.svg" width="9" height="17" alt="usd icon"></span>
-                                                <input class="input__input" type="number" name="amount" id="amount" value="100">
-                                            </label>
+                                            <span class="input__icon"><img src="./img/icons/usd-white.svg" width="9" height="17" alt="usd icon"></span>
+                                            <input class="input__input" type="number" name="amounts" id="amount-1" value="100">
+                                        </label>
                                     </div>
-                                    <div class="options-aside__item">
-                                        <div class="options-aside__row row">
-                                            <h3 class="options-aside__label">Profit</h3>
-                                            <div class="options-aside__icon tooltip-js" title="hello, this is tooltip">
-                                                <img src="./img/icons/question.svg" width="20" height="20" alt="question icon">
+                                    <div class="aside__md-col">
+                                        <div class="aside__item">
+                                            <div class="aside__row row">
+                                                <h3 class="aside__label">Profit</h3>
+                                                <div class="aside__icon tooltip-js" title="hello, this is tooltip">
+                                                    <img src="./img/icons/question.svg" width="20" height="20" alt="question icon">
+                                                </div>
                                             </div>
+                                            <p class="aside__value highlight">
+                                                85%
+                                            </p>
                                         </div>
-                                        <p class="options-aside__value highlight">
-                                            85%
-                                        </p>
-                                    </div>
-                                    <div class="options-aside__item">
-                                        <div class="options-aside__row row">
-                                            <h3 class="options-aside__label">Income</h3>
-                                            <div class="options-aside__icon tooltip-js" title="hello, this is tooltip">
-                                                <img src="./img/icons/question.svg" width="20" height="20" alt="question icon">
+                                        <div class="aside__item">
+                                            <div class="aside__row row">
+                                                <h3 class="aside__label">Income</h3>
+                                                <div class="aside__icon tooltip-js" title="hello, this is tooltip">
+                                                    <img src="./img/icons/question.svg" width="20" height="20" alt="question icon">
+                                                </div>
                                             </div>
+                                            <p class="aside__value highlight">
+                                                185 $
+                                            </p>
                                         </div>
-                                        <p class="options-aside__value highlight">
-                                            185 $
-                                        </p>
                                     </div>
 
-                                    <div class="options-aside__buttons">
-                                        <button type="button" class="btn options-aside__btn">
+                                    <div class="aside__buttons">
+                                        <button type="button" class="btn aside__btn">
                                                 <img src="./img/icons/arrow-tri.svg" width="20" height="20" alt="arrow">
                                                 Up
                                             </button>
-                                        <button type="button" class="btn options-aside__btn">
+                                        <button type="button" class="btn aside__btn">
                                                 <img class="rot180" src="./img/icons/arrow-tri.svg" width="20" height="20" alt="arrow">
                                                 Down
-                                            </button>
+                                        </button>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        <div class="swiper-slide start-section__slide"></div>
-                        <div class="swiper-slide start-section__slide"></div>
+                        <div class="swiper-slide start-section__slide">
+                            <ul class="start-section__list">
+                                <li class="page-block start-section__type plan-type">
+                                    <input type="radio" name="plan" class="visually-hidden plan-type__input" id="protection">
+                                    <div class="page-block__inner plan-type__inner">
+                                        <label class="plan-type__label" for="protection"></label>
+                                        <!-- <button aria-label="Select 'Protection' plan" title="Select 'Protection' plan" class="plan-type__button"></button> -->
+                                        <h2 class="plan-type__title">
+                                            Protection
+                                        </h2>
+                                        <dl class="plan-type__dl dl">
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Investment period</dt>
+                                                <dd class="dl__dd">+100 Days</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Investment profit</dt>
+                                                <dd class="dl__dd">+2%</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Total Return</dt>
+                                                <dd class="dl__dd">102%</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Minimum amount</dt>
+                                                <dd class="dl__dd">10$</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Maximum amount</dt>
+                                                <dd class="dl__dd">999$</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Insurance</dt>
+                                                <dd class="dl__dd">100%</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Deposits allowed</dt>
+                                                <dd class="dl__dd">10</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li class="page-block start-section__type plan-type">
+                                    <input type="radio" name="plan" checked class="visually-hidden plan-type__input" id="standart">
+                                    <div class="page-block__inner plan-type__inner">
+                                        <label class="plan-type__label" for="standart"></label>
+                                        <!-- <button aria-label="Select 'Standart' plan" title="Select 'Standart' plan" class="plan-type__button"></button> -->
+                                        <h2 class="plan-type__title">
+                                            Standart
+                                        </h2>
+                                        <dl class="plan-type__dl dl">
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Investment period</dt>
+                                                <dd class="dl__dd">+100 Days</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Investment profit</dt>
+                                                <dd class="dl__dd">+100%</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Total Return</dt>
+                                                <dd class="dl__dd">200%</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Minimum amount</dt>
+                                                <dd class="dl__dd">1000$</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Maximum amount</dt>
+                                                <dd class="dl__dd">1000$</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Insurance</dt>
+                                                <dd class="dl__dd">100%</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Deposits allowed</dt>
+                                                <dd class="dl__dd">1</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li class="page-block start-section__type plan-type">
+                                    <input type="radio" name="plan" class="visually-hidden plan-type__input" id="premium">
+
+                                    <div class="page-block__inner  plan-type__inner">
+                                        <label class="plan-type__label" for="premium"></label>
+                                        <!-- <button aria-label="Select 'Premium' plan" title="Select 'Premium' plan" class="plan-type__button"></button> -->
+                                        <h2 class="plan-type__title">
+                                            Premium
+                                        </h2>
+                                        <dl class="plan-type__dl dl">
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Investment period</dt>
+                                                <dd class="dl__dd">+100 Days</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Investment profit</dt>
+                                                <dd class="dl__dd">+2%</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Total Return</dt>
+                                                <dd class="dl__dd">102%</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Minimum amount</dt>
+                                                <dd class="dl__dd">10$</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Maximum amount</dt>
+                                                <dd class="dl__dd">999$</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Insurance</dt>
+                                                <dd class="dl__dd">100%</dd>
+                                            </div>
+                                            <div class="dl__row">
+                                                <dt class="dl__dt">Deposits allowed</dt>
+                                                <dd class="dl__dd">10</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="start-section__aside aside start-section__aside--max page-block">
+                                <form action="" class="page-block__inner">
+                                    <div class="aside__item">
+                                        <div class="aside__row row">
+                                            <h3 class="aside__label">Amount</h3>
+                                            <div class="aside__icon tooltip-js" title="hello, this is tooltip">
+                                                <img src="./img/icons/question.svg" width="20" height="20" alt="question icon">
+                                            </div>
+                                        </div>
+                                        <label class="input input--icon">
+                                            <span class="input__icon"><img src="./img/icons/usd-white.svg" width="9" height="17" alt="usd icon"></span>
+                                            <input class="input__input" type="number" name="amount" id="amount" value="100">
+                                        </label>
+                                    </div>
+                                    <dl class="aside__dl dl">
+                                        <div class="dl__row">
+                                            <dt class="dl__dt">Expiration date</dt>
+                                            <dd class="dl__dd">after 100 days</dd>
+                                        </div>
+                                        <div class="dl__row">
+                                            <dt class="dl__dt">Refund Amount</dt>
+                                            <dd class="dl__dd">2000$</dd>
+                                        </div>
+                                    </dl>
+                                    <div class="aside__item row">
+                                        <div class="aside__col">
+                                            <div class="aside__row row">
+                                                <h3 class="aside__label">Profit</h3>
+                                                <div class="aside__icon tooltip-js" title="hello, this is tooltip">
+                                                    <img src="./img/icons/question.svg" width="20" height="20" alt="question icon">
+                                                </div>
+                                            </div>
+                                            <div class="highlight aside__highlight">
+                                                100%
+                                            </div>
+                                        </div>
+                                        <div class="aside__col">
+                                            <div class="aside__row row">
+                                                <h3 class="aside__label">Income</h3>
+                                                <div class="aside__icon tooltip-js" title="hello, this is tooltip">
+                                                    <img src="./img/icons/question.svg" width="20" height="20" alt="question icon">
+                                                </div>
+                                            </div>
+                                            <div class="highlight aside__highlight">
+                                                2000 $
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="aside__button btn">OPEN DEPOSIT</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="swiper-slide start-section__slide">
+                            <div class="start-section__profit-chart profit-chart">
+                                <div class="profit-chart__head">
+                                    <button class="btn profit-chart__btn">1000$</button>
+                                    <div class="profit-chart__input">
+                                        <p class="profit-chart__p red">
+                                            Off
+                                        </p>
+                                        <input class="input input__input" type="url" name="link" id="link">
+                                    </div>
+                                </div>
+                                <div class="profit-chart__body">
+                                    <img src="./img/charts/chart-2.png" width="1263" height="336" alt="chart 2">
+                                </div>
+                            </div>
+                            <div class="start-section__fluid-aside page-block start-section__aside--mid">
+                                <div class="page-block__inner">
+                                    <dl class="dl-end">
+                                        <div class="dl-end__row">
+                                            <dt class="dl-end__dt">Business activation cost</dt>
+                                            <dd class="dl-end__dd">1000$</dd>
+                                        </div>
+                                        <div class="dl-end__row">
+                                            <dt class="dl-end__dt">Activation period</dt>
+                                            <dd class="dl-end__dd">indefinitely</dd>
+                                        </div>
+                                        <div class="dl-end__row">
+                                            <dt class="dl-end__dt">Structure</dt>
+                                            <dd class="dl-end__dd">10 levels</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="start-section__aside aside start-section__aside--mid page-block">
+                                <form action="" class="page-block__inner">
+                                    <div class="aside__item">
+                                        <div class="aside__row row">
+                                            <h3 class="aside__label">Active partners</h3>
+                                            <div class="aside__icon tooltip-js" title="hello, this is tooltip">
+                                                <img src="./img/icons/question.svg" width="20" height="20" alt="question icon">
+                                            </div>
+                                        </div>
+                                        <div class="highlight aside__highlight">
+                                            10
+                                        </div>
+                                    </div>
+                                    <div class="aside__item">
+                                        <div class="aside__row row">
+                                            <h3 class="aside__label">Estimated Profit</h3>
+                                            <div class="aside__icon tooltip-js" title="hello, this is tooltip">
+                                                <img src="./img/icons/question.svg" width="20" height="20" alt="question icon">
+                                            </div>
+                                        </div>
+                                        <div class="highlight aside__highlight">
+                                            9500$
+                                        </div>
+                                    </div>
+                                    <p class="aside__faq">Have questions? <a href="/" class="highlight">see FAQ</a></p>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                     <nav class="slider__nav start-section__nav">
                         <button class="swiper-button-prev btn btn--squere"></button>
@@ -76,6 +314,759 @@
                     </nav>
                 </div>
             </section>
+            <section class="instruction section-margin">
+                <div class="instruction__head row">
+                    <h2 class=" instruction__title title">Instruction</h2>
+                    <dl class="instruction__head-info row">
+                        <div class="instruction__head-item row">
+                            <div class="instruction__head-img">
+                                <img src="./img/icons/customers.svg" width="60" height="60" alt="customers icon">
+                            </div>
+                            <div class="instruction__head-head-text">
+                                <dt>696264</dt>
+                                <dd>Total customers</dd>
+                            </div>
+                        </div>
+                        <div class="instruction__head-item row">
+                            <div class="instruction__head-img">
+                                <img src="./img/icons/laptop-people.svg" width="60" height="60" alt="people with laptop icon">
+                            </div>
+                            <div class="instruction__head-head-text">
+                                <dt>109</dt>
+                                <dd>Customers online</dd>
+                            </div>
+                        </div>
+                        <div class="instruction__head-item row">
+                            <div class="instruction__head-img">
+                                <img src="./img/icons/wallet.svg" width="60" height="60" alt="customers icon">
+                            </div>
+                            <div class="instruction__head-head-text">
+                                <dt>2795693$</dt>
+                                <dd>Paid in total</dd>
+                            </div>
+                        </div>
+                    </dl>
+                </div>
+                <ol class="instruction__body">
+                    <li class="instruction__item page-block">
+                        <div class="page-block__inner instruction__item-inner">
+                            <div class="instruction__number">01</div>
+                            <h3 class="instruction__name">Registration</h3>
+                            <div class="instruction__item-body">
+                                <div class="instruction__img">
+                                    <img src="./img/icons/list.svg" width="100" height="100" alt="page icon">
+                                </div>
+                            </div>
+                            <a href="/" class="instruction__button btn">REAL ACCOUNT</a>
+                        </div>
+                    </li>
+                    <li class="instruction__item page-block">
+
+                        <div class="page-block__inner instruction__item-inner">
+                            <div class="instruction__number">02</div>
+                            <h3 class="instruction__name">Refill</h3>
+                            <div class="instruction__item-body">
+                                <ul class="instruction__icons">
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/1.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/2.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/3.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/4.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/5.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/6.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/7.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/8.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/9.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/10.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/11.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/12.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/13.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/14.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/15.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/16.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="/" class="instruction__button btn">REFILL</a>
+                        </div>
+                    </li>
+                    <li class="instruction__item page-block">
+
+                        <div class="page-block__inner instruction__item-inner">
+                            <div class="instruction__number">03</div>
+                            <h3 class="instruction__name">Deposit</h3>
+                            <div class="instruction__item-body">
+                                <div class="instruction__img">
+                                    <img src="./img/icons/money.svg" width="100" height="100" alt="page icon">
+                                    <label for="input" class="instruction__label">
+                                    Specify the amount of the transaction
+                                </label>
+                                    <input type="text" class="input input__input" name="input" id="input" value="1000$">
+                                </div>
+                            </div>
+                            <a href="/" class="instruction__button btn">TO HAVE A DEAL</a>
+                        </div>
+                    </li>
+                    <li class="instruction__item page-block">
+
+                        <div class="page-block__inner instruction__item-inner">
+                            <div class="instruction__number">04</div>
+                            <h3 class="instruction__name">Withdrawal</h3>
+                            <div class="instruction__item-body">
+                                <ul class="instruction__icons">
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/1.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/2.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/3.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/4.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/5.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/6.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/7.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/8.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/9.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/10.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/11.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/12.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/13.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/14.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/15.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                    <li class="instruction__icon">
+                                        <img src="./img/icons/refill/16.svg" width="50" height="50" alt="refill icon">
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="/" class="instruction__button btn">WITHDRAW FUNDS</a>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+            <section class="assets section-margin">
+                <h2 class="assets__title title">Financial assets</h2>
+                <div class="assets__table-wrapper scrollbar-outer">
+                    <dl class="assets__table">
+                        <div class="assets__row">
+                            <dt class="assets__dt">
+                                <span>Crypto</span>
+                                <span>+85%</span>
+                            </dt>
+                            <dd class="assets__dd assets__dd--crypto">
+                                <img src="./img/f-assets/crypto/1.png" width="75" height="27" alt="crypto icon">
+                                <img src="./img/f-assets/crypto/2.png" width="63" height="26" alt="crypto icon">
+                                <img src="./img/f-assets/crypto/3.png" width="50" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/crypto/4.png" width="30" height="48" alt="crypto icon">
+                                <img src="./img/f-assets/crypto/5.png" width="50" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/crypto/6.png" width="50" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/crypto/7.png" width="50" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/crypto/8.png" width="94" height="26" alt="crypto icon">
+                                <img src="./img/f-assets/crypto/9.png" width="50" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/crypto/10.png" width="107" height="37" alt="crypto icon">
+                                <img src="./img/f-assets/crypto/11.png" width="50" height="44" alt="crypto icon">
+                                <img src="./img/f-assets/crypto/12.png" width="50" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/crypto/13.png" width="50" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/crypto/14.png" width="58" height="37" alt="crypto icon">
+                                <img src="./img/f-assets/crypto/15.png" width="50" height="46" alt="crypto icon">
+                                <img src="./img/f-assets/crypto/16.png" width="43" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/crypto/17.png" width="50" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/crypto/18.png" width="50" height="48" alt="crypto icon">
+                            </dd>
+                        </div>
+                        <div class="assets__row">
+                            <dt class="assets__dt">
+                                <span>Currencies</span>
+                                <span>+85%</span>
+                            </dt>
+                            <dd class="assets__dd assets__dd--currencies">
+                                <img src="./img/f-assets/currencies/1.png" width="31" height="42" alt="crypto icon">
+                                <img src="./img/f-assets/currencies/2.png" width="34" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/currencies/3.png" width="38" height="43" alt="crypto icon">
+                                <img src="./img/f-assets/currencies/4.png" width="64" height="49" alt="crypto icon">
+                                <img src="./img/f-assets/currencies/5.png" width="36" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/currencies/6.png" width="37" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/currencies/7.png" width="32" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/currencies/8.png" width="37" height="52" alt="crypto icon">
+                                <img src="./img/f-assets/currencies/9.png" width="37" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/currencies/1.png" width="31" height="42" alt="crypto icon">
+                                <img src="./img/f-assets/currencies/2.png" width="34" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/currencies/3.png" width="38" height="43" alt="crypto icon">
+                                <img src="./img/f-assets/currencies/4.png" width="64" height="49" alt="crypto icon">
+                                <img src="./img/f-assets/currencies/5.png" width="36" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/currencies/6.png" width="37" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/currencies/7.png" width="32" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/currencies/8.png" width="37" height="52" alt="crypto icon">
+                                <img src="./img/f-assets/currencies/9.png" width="37" height="50" alt="crypto icon">
+                            </dd>
+                        </div>
+                        <div class="assets__row">
+                            <dt class="assets__dt">
+                                <span>Stock</span>
+                                <span>+85%</span>
+                            </dt>
+                            <dd class="assets__dd assets__dd--stock">
+                                <img src="./img/f-assets/stock/1.png" width="41" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/stock/2.png" width="50" height="42" alt="crypto icon">
+                                <img src="./img/f-assets/stock/3.png" width="160" height="36" alt="crypto icon">
+                                <img src="./img/f-assets/stock/4.png" width="24" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/stock/5.png" width="62" height="25" alt="crypto icon">
+                                <img src="./img/f-assets/stock/6.png" width="112" height="37" alt="crypto icon">
+                                <img src="./img/f-assets/stock/7.png" width="64" height="50" alt="crypto icon">
+                                <img src="./img/f-assets/stock/8.png" width="50" height="40" alt="crypto icon">
+                                <img src="./img/f-assets/stock/9.png" width="141" height="30" alt="crypto icon">
+                                <img src="./img/f-assets/stock/10.png" width="82" height="29" alt="crypto icon">
+                                <img src="./img/f-assets/stock/11.png" width="125" height="20" alt="crypto icon">
+                                <img src="./img/f-assets/stock/12.png" width="126" height="22" alt="crypto icon">
+                                <img src="./img/f-assets/stock/13.png" width="50" height="47" alt="crypto icon">
+                                <img src="./img/f-assets/stock/14.png" width="71" height="23" alt="crypto icon">
+                            </dd>
+                        </div>
+                        <div class="assets__row">
+                            <dt class="assets__dt">
+                                <span>Material</span>
+                                <span>+85%</span>
+                            </dt>
+                            <dd class="assets__dd assets__dd--material">
+                                <img src="./img/f-assets/material/1.png" width="50" height="40" alt="crypto icon">
+                                <img src="./img/f-assets/material/1.png" width="50" height="40" alt="crypto icon">
+                                <img src="./img/f-assets/material/2.png" width="104" height="50" alt="crypto icon">
+                            </dd>
+                        </div>
+                        <div class="assets__row">
+                            <dt class="assets__dt">
+                                <span>Metals</span>
+                                <span>+90%</span>
+                            </dt>
+                            <dd class="assets__dd assets__dd--metals">
+                                <img src="./img/f-assets/metals/1.png" width="100" height="34" alt="crypto icon">
+                                <img src="./img/f-assets/metals/2.png" width="100" height="34" alt="crypto icon">
+                                <img src="./img/f-assets/metals/3.png" width="92" height="34" alt="crypto icon">
+                                <img src="./img/f-assets/metals/4.png" width="71" height="34" alt="crypto icon">
+                                <img src="./img/f-assets/metals/4.png" width="60" height="34" alt="crypto icon">
+                            </dd>
+                        </div>
+                        <div class="assets__row">
+                            <dt class="assets__dt">
+                                <span>Investments</span>
+                                <span>+100%</span>
+                            </dt>
+                            <dd class="assets__dd assets__dd--investments">
+                                <button class="btn assets__btn">After 100 days</button>
+                                <button class="btn assets__btn">After 50 days</button>
+                                <button class="btn assets__btn">After 10 days</button>
+                            </dd>
+                        </div>
+                        <div class="assets__row">
+                            <dt class="assets__dt">
+                                <span>Business</span>
+                                <span>10 levels</span>
+                            </dt>
+                            <dd class="assets__dd assets__dd--business">
+                                <button class="btn assets__btn">
+                                    <img src="./img/icons/user.svg" width="30" height="30" alt="User">ACTIVATION 1000$
+                                </button>
+                                <img src="./img/icons/table-arrow.svg" width="60" height="29" alt="arrow">
+                                <p>500$-50-50-50-50-50-50-50-50-50</p>
+                                <img src="./img/icons/table-arrow.svg" width="60" height="29" alt="arrow">
+                                <img src="./img/icons/wallet-2.svg" width="50" height="50" alt="wallet">
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+            <section class="statistic section-margin">
+                <h2 class="statistic__title title">Online statistic
+                    <span class="statistic__subtitle">Updated: <time>jan 29, 2021</time></span>
+                </h2>
+                <div class="statistic__list">
+                    <article class="statistic__item page-block">
+                        <div class="page-block__inner">
+                            <span class="statistic__suptitle">Last</span>
+                            <h3 class="statistic__name">20 Refill</h3>
+                            <div class="statistic__table-wrapper">
+                                <table class="statistic__table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="statistic__number">
+                                                01
+                                            </td>
+                                            <td>
+                                                Брынских Пимен
+                                            </td>
+                                            <td>
+                                                Other
+                                            </td>
+                                            <td>
+                                                1000.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="statistic__number">
+                                                02
+                                            </td>
+                                            <td>
+                                                Брынских Пимен
+                                            </td>
+                                            <td>
+                                                PM
+                                            </td>
+                                            <td>
+                                                1000.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="statistic__number">
+                                                03
+                                            </td>
+                                            <td>
+                                                Брынских Пимен
+                                            </td>
+                                            <td>
+                                                Crypto
+                                            </td>
+                                            <td>
+                                                1000.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="statistic__number">
+                                                04
+                                            </td>
+                                            <td>
+                                                Брынских Пимен
+                                            </td>
+                                            <td>
+                                                PM
+                                            </td>
+                                            <td>
+                                                1000.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="statistic__number">
+                                                05
+                                            </td>
+                                            <td>
+                                                Брынских Пимен
+                                            </td>
+                                            <td>
+                                                Crypto
+                                            </td>
+                                            <td>
+                                                1000.00 USD
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="/" class="btn statistic__button">
+                                show more
+                            </a>
+                        </div>
+                    </article>
+                    <article class="statistic__item page-block">
+                        <div class="page-block__inner">
+                            <span class="statistic__suptitle">Last</span>
+                            <h3 class="statistic__name">20 Withdrawal</h3>
+                            <div class="statistic__table-wrapper">
+                                <table class="statistic__table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="statistic__number">
+                                                01
+                                            </td>
+                                            <td>
+                                                Брынских Пимен
+                                            </td>
+                                            <td>
+                                                <img src="./img/qiwi.png" width="66" height="32" alt="Qiwi logo">
+                                            </td>
+                                            <td>
+                                                1000.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="statistic__number">
+                                                02
+                                            </td>
+                                            <td>
+                                                Брынских Пимен
+                                            </td>
+                                            <td>
+                                                <img src="./img/qiwi.png" width="66" height="32" alt="Qiwi logo">
+                                            </td>
+                                            <td>
+                                                1000.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="statistic__number">
+                                                03
+                                            </td>
+                                            <td>
+                                                Брынских Пимен
+                                            </td>
+                                            <td>
+                                                <img src="./img/qiwi.png" width="66" height="32" alt="Qiwi logo">
+                                            </td>
+                                            <td>
+                                                1000.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="statistic__number">
+                                                04
+                                            </td>
+                                            <td>
+                                                Брынских Пимен
+                                            </td>
+                                            <td>
+                                                <img src="./img/qiwi.png" width="66" height="32" alt="Qiwi logo">
+                                            </td>
+                                            <td>
+                                                1000.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="statistic__number">
+                                                05
+                                            </td>
+                                            <td>
+                                                Брынских Пимен
+                                            </td>
+                                            <td>
+                                                <img src="./img/qiwi.png" width="66" height="32" alt="Qiwi logo">
+                                            </td>
+                                            <td>
+                                                1000.00 USD
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="/" class="btn statistic__button">
+                                show more
+                            </a>
+                        </div>
+                    </article>
+                    <article class="statistic__item page-block">
+                        <div class="page-block__inner">
+                            <span class="statistic__suptitle">Last</span>
+                            <h3 class="statistic__name">Top 5 payouts</h3>
+                            <div class="statistic__table-wrapper">
+                                <table class="statistic__table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="statistic__number">
+                                                01
+                                            </td>
+                                            <td>
+                                                Брынских Пимен
+                                            </td>
+                                            <td>
+                                                <img src="./img/qiwi.png" width="66" height="32" alt="Qiwi logo">
+                                            </td>
+                                            <td>
+                                                1000.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="statistic__number">
+                                                02
+                                            </td>
+                                            <td>
+                                                Брынских Пимен
+                                            </td>
+                                            <td>
+                                                <img src="./img/qiwi.png" width="66" height="32" alt="Qiwi logo">
+                                            </td>
+                                            <td>
+                                                1000.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="statistic__number">
+                                                03
+                                            </td>
+                                            <td>
+                                                Брынских Пимен
+                                            </td>
+                                            <td>
+                                                <img src="./img/qiwi.png" width="66" height="32" alt="Qiwi logo">
+                                            </td>
+                                            <td>
+                                                1000.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="statistic__number">
+                                                04
+                                            </td>
+                                            <td>
+                                                Брынских Пимен
+                                            </td>
+                                            <td>
+                                                <img src="./img/qiwi.png" width="66" height="32" alt="Qiwi logo">
+                                            </td>
+                                            <td>
+                                                1000.00 USD
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="statistic__number">
+                                                05
+                                            </td>
+                                            <td>
+                                                Брынских Пимен
+                                            </td>
+                                            <td>
+                                                <img src="./img/qiwi.png" width="66" height="32" alt="Qiwi logo">
+                                            </td>
+                                            <td>
+                                                1000.00 USD
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="/" class="btn statistic__button">
+                                show more
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="statistic__slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide statistic__slide">
+                            <div class="statistic__slide-inner">
+                                <div class="statistic__slide-head row">
+                                    <img class="rot180" src="./img/icons/arrow-tri-orange.svg" alt="arrow">
+                                    <h4 class="statistic__slide-title">Put 5 USD</h4>
+                                </div>
+                            </div>
+                            <p class="statistic__slide-subtitle">
+                                GBP/CHF 1.22078
+                            </p>
+                            <p class="statistic__slide-name">Шалимов Поликарп</p>
+                        </div>
+                        <div class="swiper-slide statistic__slide">
+                            <div class="statistic__slide-inner">
+                                <div class="statistic__slide-head row">
+                                    <img src="./img/icons/arrow-tri-orange.svg" alt="arrow">
+                                    <h4 class="statistic__slide-title">Put 5 USD</h4>
+                                </div>
+                            </div>
+                            <p class="statistic__slide-subtitle">
+                                GBP/CHF 1.22078
+                            </p>
+                            <p class="statistic__slide-name">Шалимов Поликарп</p>
+                        </div>
+                        <div class="swiper-slide statistic__slide">
+                            <div class="statistic__slide-inner">
+                                <div class="statistic__slide-head row">
+                                    <img src="./img/icons/arrow-tri-orange.svg" alt="arrow">
+                                    <h4 class="statistic__slide-title">Put 5 USD</h4>
+                                </div>
+                            </div>
+                            <p class="statistic__slide-subtitle">
+                                GBP/CHF 1.22078
+                            </p>
+                            <p class="statistic__slide-name">Шалимов Поликарп</p>
+                        </div>
+                        <div class="swiper-slide statistic__slide">
+                            <div class="statistic__slide-inner">
+                                <div class="statistic__slide-head row">
+                                    <img class="rot180" src="./img/icons/arrow-tri-orange.svg" alt="arrow">
+                                    <h4 class="statistic__slide-title">Put 5 USD</h4>
+                                </div>
+                            </div>
+                            <p class="statistic__slide-subtitle">
+                                GBP/CHF 1.22078
+                            </p>
+                            <p class="statistic__slide-name">Шалимов Поликарп</p>
+                        </div>
+                        <div class="swiper-slide statistic__slide">
+                            <div class="statistic__slide-inner">
+                                <div class="statistic__slide-head row">
+                                    <img src="./img/icons/arrow-tri-orange.svg" alt="arrow">
+                                    <h4 class="statistic__slide-title">Put 5 USD</h4>
+                                </div>
+                            </div>
+                            <p class="statistic__slide-subtitle">
+                                GBP/CHF 1.22078
+                            </p>
+                            <p class="statistic__slide-name">Шалимов Поликарп</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="courses section-margin">
+            <div class="container">
+                <dl class="courses__inner marquee">
+                    <div class="courses__marquee row">
+                        <div class="courses__item">
+                            <dt class="courses__name">ETH/USD</dt>
+                            <dd class="courses__number">1.39469</dd>
+                        </div>
+                        <div class="courses__item">
+                            <dt class="courses__name">DSH/USD</dt>
+                            <dd class="courses__number">106.720069</dd>
+                        </div>
+                        <div class="courses__item">
+                            <dt class="courses__name">BNB/USD</dt>
+                            <dd class="courses__number">43.29202</dd>
+                        </div>
+                        <div class="courses__item">
+                            <dt class="courses__name">XMR/USD</dt>
+                            <dd class="courses__number">43.29202</dd>
+                        </div>
+                        <div class="courses__item">
+                            <dt class="courses__name">ETC/USD</dt>
+                            <dd class="courses__number">7.76307</dd>
+                        </div>
+                        <div class="courses__item">
+                            <dt class="courses__name">BTG/USD</dt>
+                            <dd class="courses__number">17.76307</dd>
+                        </div>
+                        <div class="courses__item">
+                            <dt class="courses__name">ETH/USD</dt>
+                            <dd class="courses__number">1.39469</dd>
+                        </div>
+                    </div>
+                </dl>
+            </div>
+        </section>
+        <section class="program section-margin">
+            <div class="container">
+                <div class="program__inner program__slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide program__slide">
+                            <div class="program__slide-inner program__slide-inner--1">
+                                <h3 class="program__title title">Affiliate program</h3>
+                                <p class="program__subtitle">Binary option</p>
+                                <button class="program__button btn">Read more</button>
+                                <figure class="program__chart">
+                                    <img src="./img/charts/chart-3.png" width="598" height="305" alt="chart affiliate program">
+                                    <figcaption class="program__figcaption">
+                                        Automatic accrual of profits with each investment deposit of the attracted investor
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-slide program__slide">
+                            <div class="program__slide-inner program__slide-inner--2">
+                                <h3 class="program__title title">Affiliate program</h3>
+                                <p class="program__subtitle">Investment option</p>
+                                <button class="program__button btn">Read more</button>
+                                <figure class="program__chart">
+                                    <img src="./img/charts/chart-3.png" width="598" height="305" alt="chart affiliate program">
+                                    <figcaption class="program__figcaption">
+                                        Automatic accrual of profits with each investment deposit of the attracted investor
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-slide program__slide">
+                            <div class="program__slide-inner program__slide-inner--3">
+                                <h3 class="program__title title">Affiliate program</h3>
+                                <p class="program__subtitle">Network business</p>
+                                <button class="program__button btn">Read more</button>
+                                <figure class="program__chart">
+                                    <img src="./img/charts/cahrt-4.png" width="840" height="305" alt="chart affiliate program">
+                                    <figcaption class="program__figcaption">
+                                        Automatic accrual of profits with each investment deposit of the attracted investor
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="program__slider-nav">
+                        <button class="swiper-button-prev btn btn--squere"></button>
+                        <button class="swiper-button-next btn btn--squere"></button>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <div class="section-bg">
+            <div class="section-bg__logo">
+                <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
+                        <circle cx="100" cy="100" r="100" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <rect x="-1233" y="-339" width="2327" height="1743" fill="#23221E"/>
+                    </g>
+                    <circle cx="100" cy="100" r="64" stroke="#363636" stroke-width="2"/>
+                    <path d="M99.5 70L104.173 76.0063L110.789 72.2456L112.808 79.583L120.36 78.6404L119.417 86.1919L126.754 88.2108L122.994 94.8268L129 99.5L122.994 104.173L126.754 110.789L119.417 112.808L120.36 120.36L112.808 119.417L110.789 126.754L104.173 122.994L99.5 129L94.8268 122.994L88.2108 126.754L86.1919 119.417L78.6404 120.36L79.583 112.808L72.2456 110.789L76.0063 104.173L70 99.5L76.0063 94.8268L72.2456 88.2108L79.583 86.1919L78.6404 78.6404L86.1919 79.583L88.2108 72.2456L94.8268 76.0063L99.5 70Z" fill="url(#paint0_linear)"/>
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="126.452" y1="70" x2="66.932" y2="127.632" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#CDB185"/>
+                            <stop offset="1" stop-color="#EBD3AE"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="section-bg__ellipse"></div>
+            <div class="section-bg__body">
+
+            </div>
         </div>
     </main>
     @@include("_scripts.html")
