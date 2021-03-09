@@ -82,3 +82,20 @@
 .section-margin {
     margin-bottom: 110px;
 }
+
+@keyframes logo-rotate {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo-rotate {
+    transform-origin: 50%;
+    animation: logo-rotate 10s linear infinite;
+}

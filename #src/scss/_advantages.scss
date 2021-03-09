@@ -1,0 +1,65 @@
+.advantages {
+    position: relative;
+    padding-top: 120px;
+    .scroll-element {
+        display: none!important;
+    }
+    &__slider {}
+    &__slide {}
+    &__title {
+        min-height: 48px;
+    }
+    &__list-wrapper {
+        margin-bottom: 50px;
+    }
+    &__list {
+        display: flex;
+        margin: 0 -15px;
+        width: 1720px;
+        overflow: hidden;
+    }
+    &__item {
+        width: 320px;
+        margin: 0 15px;
+        text-align: center;
+        .page-block__inner {
+            height: 100%;
+        }
+    }
+    &__number {
+        font-weight: 300;
+        font-size: 50px;
+        color: $color1;
+        min-height: 43px;
+        margin-bottom: 30px;
+    }
+    &__name {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 38px;
+        min-height: 60px;
+        margin-bottom: 27px;
+    }
+    &__img {}
+    &__button {
+        display: flex;
+        margin: 0 auto;
+    }
+    &__slider-nav {
+        position: absolute;
+        background: #23221E;
+        z-index: 1;
+        width: 160px;
+        margin: 0 -10px;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        .swiper-button-prev {
+            margin: 0 10px;
+        }
+        .swiper-button-next {
+            margin: 0 10px;
+        }
+    }
+}

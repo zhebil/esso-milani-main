@@ -1,0 +1,108 @@
+.registration {
+    &__slider {}
+    &__inner {
+        display: flex;
+        padding: 50px;
+    }
+    &__inner-1 {
+        background: url(../img/registration/1.png) no-repeat;
+        background-position: 220px bottom;
+    }
+    &__inner-2 {
+        background: url(../img/registration/2.png) no-repeat;
+        background-position: 220px bottom;
+    }
+    &__inner-3 {
+        background: url(../img/registration/3.png) no-repeat;
+        background-position: 300px bottom;
+    }
+    &__info {
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        margin-bottom: 84px;
+    }
+    &__descr {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 24px;
+        dt {
+            margin-bottom: 14px;
+            color: $color1;
+        }
+        margin-bottom: auto;
+    }
+    &__apps {}
+    &__apps-item {
+        margin-right: 20px;
+    }
+    &__form {
+        flex: 300px 0 1;
+        max-width: 300px;
+    }
+    &__form-item {
+        margin-bottom: 20px;
+    }
+    &__button {
+        margin-top: 10px;
+        width: 100%;
+        margin-bottom: 14px;
+    }
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__security {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url(../img/icons/security.svg) center no-repeat;
+    }
+    &__contact {
+        flex: 340px 0 1;
+        max-width: 340px;
+        margin-right: 100px;
+        margin-left: 30px;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        img {
+            margin-bottom: 20px;
+        }
+        a:not(:last-child) {
+            img {
+                margin-right: 20px;
+            }
+        }
+    }
+    &__contact-list {}
+    &__contact-item {
+        margin-bottom: 20px;
+    }
+    &__contact-name {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 24px;
+        color: $color1;
+        margin-bottom: 6px;
+    }
+    &__contact-definition {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    &__slider-nav {
+        .swiper-button-prev,
+        .swiper-button-next {
+            position: absolute;
+            margin: 0 50px;
+        }
+    }
+}

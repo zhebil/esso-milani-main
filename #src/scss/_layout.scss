@@ -16,6 +16,7 @@
         border: 2px solid #363636;
         border-radius: 6px;
         padding: 30px;
+        height: 100%;
         &--big {
             padding: 50px;
         }
@@ -38,26 +39,31 @@
 }
 
 .section-bg {
-    position: relative;
-    margin-top: 140px;
+    padding-top: 140px;
     overflow: hidden;
-    height: 1000px;
+    &__inner {
+        position: relative;
+        padding-top: 120px;
+    }
     &__logo {
         position: absolute;
         left: 50%;
         top: 0;
-        transform: translate(-50%, -50px);
+        transform: translate(-50%, -100px);
         z-index: 1;
     }
     &__ellipse {
         background-color: #23221E;
         width: 150%;
         height: 1800px;
-        clip-path: ellipse(50% 31% at 50% 31%);
+        clip-path: ellipse(50% 31% at 50% calc(31%));
         position: absolute;
         left: 50%;
         top: 0;
         transform: translateX(-50%);
     }
-    &__body {}
+    &__body {
+        padding-bottom: 10px;
+        background: #23221E;
+    }
 }
