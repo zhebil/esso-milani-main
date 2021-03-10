@@ -1,29 +1,29 @@
 .desktop {
-    @media (max-width: 991px) {
+    @media (max-width: 1200px) {
         display: none;
     }
 }
 
 .tablet {
-    @media (max-width: 650px), (min-width: 991px) {
+    @media (max-width: 650px), (min-width: 1200px) {
         display: none;
     }
 }
 
 .tablet-desktop {
-    @media (max-width: 650px) {
+    @media (max-width: 768px) {
         display: none;
     }
 }
 
 .mobile-tablet {
-    @media (min-width: 991px) {
+    @media (min-width: 1200px) {
         display: none;
     }
 }
 
 .mobile {
-    @media (min-width: 650px) {
+    @media (min-width: 768px) {
         display: none;
     }
 }
@@ -81,6 +81,9 @@
 
 .section-margin {
     margin-bottom: 110px;
+    @media (max-width: 1200px) {
+        margin-bottom: 60px;
+    }
 }
 
 @keyframes logo-rotate {
@@ -98,4 +101,8 @@
 .logo-rotate {
     transform-origin: 50%;
     animation: logo-rotate 10s linear infinite;
+}
+
+.overflow {
+    overflow: hidden;
 }

@@ -50,6 +50,9 @@
     font-size: 48px;
     line-height: 48px;
     margin-bottom: 50px;
+    @media (max-width: 1200px) {
+        margin-bottom: 30px;
+    }
     @media (max-width: 650px) {
         font-size: 36px;
         line-height: 48px;

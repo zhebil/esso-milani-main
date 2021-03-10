@@ -70,7 +70,8 @@
         display: flex;
         align-items: center;
         opacity: 0;
-        transition: all 0.2s ease;
+        transition-duration: 200ms;
+        transition-property: opacity;
         &.swiper-slide-visible {
             opacity: 1;
         }
