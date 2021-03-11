@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("_head.html")
+    <title>Esso Milani </title>
+</head>
+
+<body>
+    <!--  -->
+    @@include("_header.html")
+    <!--  -->
+
+    <div class="container">
+        <div class="preview section-margin">
+            <div class="preview__img">
+                <img src="./img/preview/history.png" width="1720" height="700" alt="Esso Millanni history">
+            </div>
+            <h1 class="preview__title"></h1>
+        </div>
+        <div class="layout">
+            <!--  -->
+            @@include("_left.html")
+            <!--  -->
+            <main class="layout__content">
+                
+                
+                
+                
+                <!--  -->
+                @@include("_see.html")
+                <!--  -->
+            </main>
+            <!--  -->
+            @@include("_right.html")
+            <!--  -->
+
+            <div class="layout__form">
+                <!--  -->
+                @@include("_form.html")
+                <!--  -->
+            </div>
+        </div>
+    </div>
+
+
+    <!--  -->
+    @@include("_footer.html")
+    <!--  -->
+    @@include("_scripts.html")
+</body>
+
+</html>

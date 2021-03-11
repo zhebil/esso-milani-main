@@ -1,0 +1,112 @@
+<aside class="layout__right">
+    <article class="layout__item">
+        <div class="login page-block">
+            <form class="page-block__inner">
+                <h3 class="layout__title login__title">
+                    Login
+                </h3>
+                <div class="login__item">
+                    <label for="email" class="input__label">
+                        Message
+                    </label>
+                    <input type="email" class="input input__input" name="email" id="email">
+                </div>
+                <div class="login__item">
+                    <label for="password" class="input__label">
+                        Message
+                    </label>
+                    <input type="password" class="input input__input" name="password" id="password">
+                    <a href="/" class="login__message">Forgot your password?</a>
+                </div>
+                <button class="btn login__btn">AUTHORIZATION</button>
+            </form>
+        </div>
+    </article>
+    <article class="layout__item layout__item--btns">
+        <a href="/" class="btn layout__right-btn">OPEN REAL ACCOUNT</a>
+        <a href="/" class="btn layout__right-btn">OPEN DEMO ACCOUNT</a>
+    </article>
+    <article class="layout__item">
+        <div class="calculation page-block">
+            <form class="page-block__inner">
+                <h3 class="layout__title calculation__title">
+                    Profit calculation
+                </h3>
+                <div class="calculation__item">
+                    <label for="amount" class="input__label">
+                        Amount
+                    </label>
+                    <input type="number" class="input input__input" name="amount" id="amount">
+                </div>
+                <div class="calculation__item">
+                    <label for="asset" class="input__label">
+                        Choose an asset
+                    </label>
+                    <div class="select calculation__select select--typical">
+                        <select name="gender" class="visually-hidden">
+                            <option selected value="asset-1">asset-1</option>
+                            <option value="asset-2">asset-2</option>
+                        </select>
+                        <button type="button" class="select__current">
+                            <span class="select__content">
+                                <span class="select__text">asset-1</span>
+                            </span>
+                            <span class="select__arrow"></span>
+                            </button>
+                        <ul class="select__list">
+                            <li class="select__item">
+                                <button type="button" class="select__btn active">
+                                    <span class="select__content">
+                                        <span class="select__text" data-value="asset-1">asset-1</span>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="select__item">
+                                <button type="button" class="select__btn">
+                                    <span class="select__content">
+                                        <span class="select__text" data-value="asset-2">asset-2</span>
+                                    </span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="calculation__button btn">TO CALCULATE</button>
+            </form>
+        </div>
+    </article>
+    <article class="layout__item rewards__wrapper">
+        <div class="rewards page-block">
+            <div class="page-block__inner">
+                <h3 class="layout__title rewards__title">
+                    Our rewards
+                </h3>
+                <div class="rewards__slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide rewards__slide">
+                            <img src="./img/rewards.png" width="120" height="193" alt="Esso millanni rewards">
+                        </div>
+                        <div class="swiper-slide rewards__slide">
+                            <img src="./img/rewards.png" width="120" height="193" alt="Esso millanni rewards">
+                        </div>
+                        <div class="swiper-slide rewards__slide">
+                            <img src="./img/rewards.png" width="120" height="193" alt="Esso millanni rewards">
+                        </div>
+                    </div>
+                    <button class="swiper-button-prev btn btn--squere"></button>
+                    <button class="swiper-button-next btn btn--squere"></button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="layout__item">
+        <div class="aside-news page-block">
+            <div class="page-block__inner">
+                <h3 class="layout__title aside-news__title">
+                    News
+                </h3>
+                <textarea name="aside-news" id="aside-news" class="input input__input aside-news__input" placeholder="is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only"></textarea>
+            </div>
+        </div>
+    </article>
+</aside>

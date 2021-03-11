@@ -1,6 +1,22 @@
 var $menu = $(".menu");
 var $burger = $(".menu__burger");
 var $body = $("body");
+var $selectBtn = $(".select__current");
+var $selectItems = $(".select__btn");
+var $shareFull = $(".share__full");
+var $shareItem = $(".share__item");
+var $teleportItem = $(".sm-teleport")
+
+
+$(window).on("resize", function (){ 
+  if (window.innerWidth <= 768)  {
+    $teleportItem.appendTo(".layout")
+  } else {
+    $teleportItem.appendTo(".layout__left")
+    
+  }
+})
+
 function getMenu() {
   $burger.on("click", toggleMenu);
   $menu.on("click", function (e) {
@@ -17,7 +33,37 @@ function toggleMenu() {
   $body.toggleClass("overflow");
 }
 
+function getShareFull() {
+  $shareFull.on("click", function () {
+    $shareItem.addClass("active");
+    $shareFull.fadeOut(100);
+  });
+}
+function getSelect() {
+  $selectBtn.on("click", function () {
+    var $this = $(this);
+    $this.next().slideToggle(200);
+    $this.find(".select__arrow").toggleClass("select__arrow--active");
+  });
+  //   выбор селекта
+  $selectItems.on("click", function () {
+    var parent = $(this).closest(".select");
+
+    parent.find(".select__btn").removeClass("active");
+    $(this).addClass("active");
+
+    var currentSelect = $(this).children().children().clone(true, true);
+    var currentValue = $(this).find(".select__text").data("value");
+    parent.find("select option").prop("selected", false);
+    parent.find(`select option[value=${currentValue}]`).prop("selected", true);
+
+    parent.find(".select__current .select__content").html(currentSelect);
+    parent.find(".select__list").slideUp(200);
+  });
+}
+
 $(document).ready(function () {
+  $(window).trigger('resize');
   var startSectionSlider = new Swiper(".start-section__slider", {
     navigation: {
       nextEl: ".swiper-button-next",
@@ -133,19 +179,59 @@ $(document).ready(function () {
       },
     },
   });
-  var sliders = [
-    startSectionSlider,
-    programSlider,
-    advantagesSlider,
-    giftSlider,
-    registrationSlider,
-  ];
-  sliders.forEach((slider) => {
-    slider.on("slideChange", function (evt) {
+  if (document.querySelector(".start-section__slider")) {
+    var sliders = [
+      startSectionSlider,
+      programSlider,
+      advantagesSlider,
+      giftSlider,
+      registrationSlider,
+    ];
+    startSectionSlider.on("slideChange", function (evt) {
       var idx = evt.activeIndex;
-      sliders.forEach((i) => i.slideTo(idx));
+      if (window.innerWidth < 1200) {
+        sliders.forEach((i) => i.slideTo(idx));
+      }
     });
+    sliders.forEach((slider) => {
+      slider.on("slideChange", function (evt) {
+        var idx = evt.activeIndex;
+        if (window.innerWidth > 1200) {
+          sliders.forEach((i) => i.slideTo(idx));
+        }
+      });
+    });
+  }
+
+  var mediaSlider = new Swiper(".media__slider", {
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+    },
   });
+  var seeSlider = new Swiper(".see__slider", {
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+  });
+  var rewardsSlider = new Swiper(".rewards__slider ", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  getShareFull();
+
+  getSelect();
 
   getMenu();
 

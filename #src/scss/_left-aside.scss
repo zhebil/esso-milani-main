@@ -1,0 +1,116 @@
+.price {
+    &__title {}
+    &__body-wrapper {
+        max-height: 190px;
+        padding-right: 5px!important;
+    }
+    &__body {}
+    &__list {}
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        font-size: 18px;
+        line-height: 18px;
+    }
+    &__name {}
+    &__value {
+        color: $color1;
+    }
+}
+
+.media {
+    &__title {}
+    &__slider {}
+    &__slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.stars {
+    &__title {}
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item {}
+}
+
+.career {
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__list {}
+    &__item {
+        position: relative;
+        padding-left: 16px;
+        font-size: 18px;
+        line-height: 18px;
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 8px;
+            height: 8px;
+            background: linear-gradient(225.92deg, #CDB185 2.19%, #EBD3AE 101.5%);
+            border-radius: 50%;
+            display: block;
+        }
+    }
+}
+
+.wishes {
+    &__title {}
+    &__form {}
+    &__input {
+        width: 100%;
+        height: 120px;
+        resize: none;
+    }
+    &__btn {
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+.feedback {
+    width: 100%;
+}
+
+.share {
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: -20px;
+    }
+    &__item {
+        display: none;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        &.active {
+            display: block;
+        }
+    }
+    &__full {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 20px;
+        background: url(../img/icons/plus.svg) center no-repeat;
+    }
+}
