@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("_head.html")
+    <title>Esso Milani </title>
+</head>
+
+<body>
+    <!--  -->
+    @@include("_header.html")
+    <!--  -->
+
+    <div class="container">
+        <div class="preview section-margin">
+            <div class="preview__img">
+                <img src="./img/preview/6.png" width="1720" height="700" alt="Esso Millanni history">
+            </div>
+            <h1 class="preview__title">Legal address <br> point of successful start</h1>
+        </div>
+        <div class="layout">
+            <!--  -->
+            @@include("_left.html")
+            <!--  -->
+            <main class="layout__content">
+
+                <div class="text ">
+                    <h1 class="text__title title">Legal address</h1>
+                    <div class="text__description">
+                        <p>Each customer should be interested in obtaining as much information as possible about the company before the start of cooperation since this makes it possible to ensure the availability of all necessary registration documents and
+                            increases the level of trust to us. Our company is registered in the state of Saint Vincent and the Grenadines in 2018, where there is also the head office, the legal address of which is open to each user.</p>
+                    </div>
+                </div>
+
+                <div id="wrapper-map">
+                    <div id="map-map">
+                    </div>
+
+
+                </div>
+                <address class="address section-margin">
+                    <p>
+                        Kingstown    
+                    </p>
+                    <p>Corner of and Long Lane, Sharpe Street</p>
+                    <p>
+                         Kingstown, St. George
+                    </p>
+                    <p>Saint Vincent and the Grenadines</p>
+                </address>
+                <!--  -->
+                @@include("_see.html")
+                <!--  -->
+            </main>
+            <!--  -->
+            @@include("_right.html")
+            <!--  -->
+
+            <div class="layout__form">
+                <!--  -->
+                @@include("_form.html")
+                <!--  -->
+            </div>
+        </div>
+    </div>
+
+
+    <!--  -->
+    @@include("_footer.html")
+    <!--  -->
+    @@include("_scripts.html")
+    <script>
+        (function() {
+            var setting = {
+                "height": 748,
+                "width": 867,
+                "zoom": 15,
+                "queryString": "Sharpe Street, Kingstown, St. George, Saint Vincent and the Grenadines",
+                "place_id": "EkZTaGFycGUgU3RyZWV0LCBLaW5nc3Rvd24sIFN0LiBHZW9yZ2UsIFNhaW50IFZpbmNlbnQgYW5kIHRoZSBHcmVuYWRpbmVzIi4qLAoUChIJLSxs5U9RR4wRdYC-3ifSmbQSFAoSCRdch9dQUUeMEfziLG3iqmUv",
+                "satellite": false,
+                "centerCoord": [13.15139070371048, -61.222747499999976],
+                "cid": "0xb499d227debe8075",
+                "lang": "ru",
+                "cityUrl": "/saint-vincent-and-the-grenadines/kingstown-11738",
+                "cityAnchorText": "Карта [CITY1], Saint Vincent, Сент-Винсент и Гренадины",
+                "id": "map-map",
+                "embed_id": "423293"
+            };
+            var d = document;
+            var s = d.createElement('script');
+            s.src = 'https://1map.com/js/script-for-user.js?embed_id=423293';
+            s.async = true;
+            s.onload = function(e) {
+                window.OneMap.initMap(setting)
+            };
+            var to = d.getElementsByTagName('script')[0];
+            to.parentNode.insertBefore(s, to);
+        })();
+    </script>
+</body>
+
+</html>

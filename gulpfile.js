@@ -185,16 +185,16 @@ function images() {
     //     quality: 70,
     //   })
     // )
-    // .pipe(dest(path.build.img))
-    // .pipe(src(path.src.img))
-    // .pipe(
-    //   imagemin({
-    //     progressive: true,
-    //     svgoPlugins: [{ removeViewBox: false }],
-    //     interlaced: true,
-    //     optimizationLevel: 1,
-    //   })
-    // )
+    .pipe(dest(path.build.img))
+    .pipe(src(path.src.img))
+    .pipe(
+      imagemin({
+        progressive: true,
+        svgoPlugins: [{ removeViewBox: false }],
+        interlaced: true,
+        optimizationLevel: 1,
+      })
+    )
     .pipe(dest(path.build.img))
     .pipe(browsersync.stream());
 }

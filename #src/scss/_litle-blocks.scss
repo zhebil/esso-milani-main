@@ -208,6 +208,31 @@
             }
         }
     }
+    &__figure {
+        margin-top: 50px;
+        img {
+            margin-bottom: 30px;
+        }
+        figcaption {
+            font-size: 18px;
+            line-height: 26px;
+            color: $color1;
+        }
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text__figure {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .see {
@@ -293,13 +318,18 @@
         top: 50%;
         transform: translate(-50%, -50%);
         z-index: 0;
-        object-fit: cover;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
     }
     &__title {
         font-weight: 100;
         font-size: 120px;
         line-height: normal;
         position: relative;
+        text-align: center;
         @media (max-width: 1200px) {
             font-size: 48px;
             line-height: 48px;
