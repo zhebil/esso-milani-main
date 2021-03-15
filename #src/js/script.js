@@ -5,17 +5,16 @@ var $selectBtn = $(".select__current");
 var $selectItems = $(".select__btn");
 var $shareFull = $(".share__full");
 var $shareItem = $(".share__item");
-var $teleportItem = $(".sm-teleport")
+var $teleportItem = $(".sm-teleport");
+var $faqItem = $(".faq__item");
 
-
-$(window).on("resize", function (){ 
-  if (window.innerWidth <= 768)  {
-    $teleportItem.appendTo(".layout")
+$(window).on("resize", function () {
+  if (window.innerWidth <= 768) {
+    $teleportItem.appendTo(".layout");
   } else {
-    $teleportItem.appendTo(".layout__left")
-    
+    $teleportItem.appendTo(".layout__left");
   }
-})
+});
 
 function getMenu() {
   $burger.on("click", toggleMenu);
@@ -25,6 +24,14 @@ function getMenu() {
     } else {
       toggleMenu();
     }
+  });
+}
+function getSpoiler() {
+  $(".faq__title a").on("click", function (e) {
+    e.preventDefault();
+  });
+  $faqItem.on("click", function () {
+    $(this).find(".faq__description").slideToggle(200);
   });
 }
 function toggleMenu() {
@@ -63,7 +70,7 @@ function getSelect() {
 }
 
 $(document).ready(function () {
-  $(window).trigger('resize');
+  $(window).trigger("resize");
   var startSectionSlider = new Swiper(".start-section__slider", {
     navigation: {
       nextEl: ".swiper-button-next",
@@ -234,6 +241,8 @@ $(document).ready(function () {
   getSelect();
 
   getMenu();
+
+  getSpoiler();
 
   $(".marquee").marquee({
     duration: 15000,

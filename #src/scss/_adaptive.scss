@@ -369,6 +369,10 @@
     }
     .stars__item {
         margin-right: 9px;
+        img {
+            width: 84px;
+            height: 84px;
+        }
     }
     .career__list {
         display: flex;
@@ -639,8 +643,15 @@
         max-width: 220px;
         height: auto;
     }
-    .text__description p:not(:last-child) {
-        margin-bottom: 20px;
+    .text__description {
+        p,
+        ul,
+        li,
+        ol {
+             :not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
     }
     .text__description {
         font-size: 16px;

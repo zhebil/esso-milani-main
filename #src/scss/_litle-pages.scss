@@ -88,6 +88,137 @@
     }
 }
 
+#wrapper-map {
+    margin-top: 50px;
+}
+
+.address {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 26px;
+    font-style: normal;
+}
+
+.stars-page {
+    &__item {
+        display: flex;
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+    }
+    &__img {
+        margin-right: 50px;
+    }
+    &__text {}
+    &__name {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    &__subtitle {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: normal;
+        color: $color1;
+        margin-bottom: 30px;
+    }
+    &__description {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+.news {
+    &__list {}
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 26px;
+        color: $color1;
+        margin-bottom: 8px;
+        a {
+            transition: all 0.4s ease;
+            position: relative;
+            &:before {
+                content: "";
+                width: 0;
+                height: 1px;
+                bottom: -2px;
+                display: block;
+                position: absolute;
+                transition: all 0.2s ease;
+                pointer-events: none;
+                background: $color1;
+            }
+            &:hover,
+            &:focus {
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__date {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+.faq {
+    &__item {}
+    &__title {
+        color: $color1;
+    }
+    &__description {
+        display: none;
+        margin-top: 20px;
+    }
+}
+
+.feedback-form {
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    &__left {
+        flex: 40% 0 1;
+        max-width: 40%;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    &__right {
+        flex: calc(60% - 50px) 0 1;
+        max-width: calc(60% - 50px);
+    }
+    &__textarea {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        textarea {
+            height: 100%;
+            resize: none;
+        }
+    }
+    &__footer {
+        width: 300px;
+        margin: 0 auto;
+    }
+    &__btn {
+        width: 100%;
+        margin-bottom: 14px;
+    }
+    &__checkbox {}
+}
+
 @media (max-width: 1200px) {
     .offices {
         display: block;
@@ -99,6 +230,38 @@
             &:after {
                 content: none;
             }
+        }
+    }
+    #wrapper-map {
+        margin-top: 30px;
+    }
+    .stars-page {
+        &__subtitle {
+            margin-bottom: 10px;
+            line-height: 32px;
+        }
+    }
+    .stars-page__item:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    .feedback-form {
+        &__body {
+            display: block;
+        }
+        &__left {
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+        &__right {
+            max-width: 100%;
+        }
+        &__textarea {
+            textarea {
+                height: 240px;
+            }
+        }
+        &__footer {
+            margin: 0;
         }
     }
 }
@@ -118,5 +281,66 @@
     }
     .awards-page__item:not(:last-child) {
         margin-bottom: 40px;
+    }
+    .address {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #wrapper-map {
+        height: 300px;
+    }
+    #map-map {
+        iframe {
+            height: 300px!important;
+        }
+    }
+    .stars-page {
+        &__item {
+            display: block;
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+        &__img {
+            margin-bottom: 30px;
+            margin-right: 0;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__text {}
+        &__name {
+            margin-bottom: 20px;
+            line-height: normal;
+        }
+        &__subtitle {
+            margin-bottom: 20px;
+            line-height: 30px;
+        }
+        &__description {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    .news__item {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    .news {
+        &__title {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &__date {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    .feedback-form {
+        &__footer {
+            width: 100%;
+        }
     }
 }

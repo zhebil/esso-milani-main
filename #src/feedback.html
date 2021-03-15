@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("_head.html")
+    <title>Esso Milani </title>
+</head>
+
+<body>
+    <!--  -->
+    @@include("_header.html")
+    <!--  -->
+
+    <div class="container">
+        <div class="preview section-margin">
+            <div class="preview__img">
+                <img src="./img/preview/28.png" width="1720" height="700" alt="Give the feedback were only getting better for you">
+            </div>
+            <h1 class="preview__title">
+                Give the feedback were only getting better for you
+            </h1>
+        </div>
+        <div class="layout">
+            <!--  -->
+            @@include("_left.html")
+            <!--  -->
+            <main class="layout__content">
+                <div class="text section-margin">
+                    <h2 class="text__title title"> Leave feedback
+                    </h2>
+                    <div class="text__description">
+                        <p>Esso Millanni INC Company is always ready to listen to your comments, criticism, and suggestions. We hear our users out, which gives us an incentive and understanding of whether we are moving in the right direction and what adjustments
+                            will help us to improve the work and the provided service.</p>
+                        <p>The form below is at your disposal. Please, и polite and reasonable.</p>
+                        <form class="feedback-form page-block">
+                            <div class="page-block__inner">
+                                <div class="feedback-form__body">
+                                    <div class="feedback-form__left">
+                                        <div class="feedback-form__item">
+                                            <label for="name-f" class="input__label">
+                                                Your name
+                                            </label>
+                                            <input type="text" class="input input__input" name="name" id="name-f" value="">
+                                        </div>
+                                        <div class="feedback-form__item">
+                                            <label for="mail-f" class="input__label">
+                                                Your Email
+                                            </label>
+                                            <input type="email" class="input input__input" name="email" id="email-f" value="">
+                                        </div>
+                                        <div class="feedback-form__item">
+                                            <label for="code" class="input__label">
+                                                Security code
+                                            </label>
+                                            <input type="text" class="input input__input" name="code" id="code" value="">
+                                        </div>
+                                    </div>
+                                    <div class="feedback-form__right">
+                                        <div class="feedback-form__textarea">
+                                            <label for="feedback" class="input__label">
+                                                Your Feedback
+                                            </label>
+                                            <textarea class="input input__input" name="feedback" id="feedback" value="">
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feedback-form__footer">
+                                    <button class="btn feedback-form__btn">Send</button>
+                                    <div class="checkbox feedback-form__checkbox row">
+                                        <input id="agree" name="agree" type="checkbox" class="checkbox__input visually-hidden" />
+                                        <label for="agree" class="checkbox__label">
+                                            I agree with the conditions
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--  -->
+                @@include("_see.html")
+                <!--  -->
+            </main>
+            <!--  -->
+            @@include("_right.html")
+            <!--  -->
+
+            <div class="layout__form">
+                <!--  -->
+                @@include("_form.html")
+                <!--  -->
+            </div>
+        </div>
+    </div>
+
+
+    <!--  -->
+    @@include("_footer.html")
+    <!--  -->
+    @@include("_scripts.html")
+</body>
+
+</html>
